@@ -1,3 +1,10 @@
+#material .cards {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+body {
+  background-color: #eee;
+}
 body #main {
   padding-left: 0px;
   padding-right: 0px;
@@ -26,6 +33,51 @@ body .page-home #panels .intro {
     margin-top: 0;
   }
 }
-body .page-home #panels .players div > div {
-  padding-bottom: 50px;
+body .page-home #panels .players .player {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  background-color: white;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin: 10px 5px 25px;
+}
+@media (min-width: 768px) {
+  body .page-home #panels .players .player {
+    margin: 10px 0px 25px;
+  }
+}
+body .page-home #panels .players .player h3 {
+  padding-left: 20px;
+}
+body .page-home #panels .players .player img {
+  margin-top: 5px;
+}
+@media (min-width: 768px) {
+  body .page-home #panels .players .player img {
+    margin-top: 10.5px;
+  }
+}
+body .page-home #panels .tour #tour-map .tourmap-infowindow h3 {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  body .page-home #panels .tour #tour-map .tourmap-infowindow h3 {
+    font-size: 26px;
+  }
+}
+body .page-home #panels .tour #tour-map .tourmap-infowindow p {
+  line-height: 18px;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  body .page-home #panels .tour #tour-map .tourmap-infowindow p {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }

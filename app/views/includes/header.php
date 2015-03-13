@@ -18,6 +18,7 @@
           <ul class="nav navbar-nav navbar-right">
 			<li><a href="/discgolf">Disc Golf</a></li>
 			<li><a href="/players">Team</a></li>
+			<li><a href="/tour">Tour</a></li>
 			<li><a href="/sponsors">Sponsors</a></li>
 			<li><a href="/sponsors">Videos</a></li>
 			<!-- <li><a href="/apparel">Apparel</a></li> -->

@@ -1,11 +1,12 @@
 //Import bootstrap variables and mixins 
 @import "bootstrap/variables.less";	
 @import "bootstrap/mixins.less";	
+@import "toolkit/toolbox.less";
 
 //Add custom CSS - http://andrewshen.net/
 
 body{
-
+	background-color: #eee;
 	#main{
 		padding-left: 0px;
  	 	padding-right: 0px;
@@ -73,9 +74,24 @@ body{
 			}
 
 			.players{
-				div > div{//Player
+				.player{//Player
+					padding-bottom: 25px; 
+					margin-bottom: 25px;
+					background-color: white;
+					#material .cards();
+
+					margin: 10px 5px 25px;
+					@media (min-width: @screen-sm-min) {margin: 10px 0px 25px;}
+
+					h3{
+						padding-left: 20px;
+					}
+
+					img{
+						margin-top: 5px;
+						@media (min-width: @screen-sm-min) {margin-top: 10.5px;}
 					
-					padding-bottom: 50px; 
+					}					
 
 					p{//Bio
 
@@ -89,6 +105,34 @@ body{
 
 			.join{
 
+			}
+
+			.tour{
+				//Google Maps styling 
+				#tour-map{
+					.tourmap-infowindow{
+						h3{
+							color: #e74c3c; 
+							font-weight: bold;
+							font-size: 16px;
+							margin: 0; 
+							padding: 0; 
+							@media (min-width: @screen-sm-min) {
+								font-size: 26px;
+
+							}
+						}
+
+						p{
+							
+							line-height: 18px;
+							font-size: 12px; 
+							margin: 0; 
+							padding: 0; 
+							@media (min-width: @screen-sm-min) {  font-size: 16px; line-height: 30px;}
+						}
+					}
+				}
 			}
 		}
 	}
