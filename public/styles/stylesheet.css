@@ -1,0 +1,31 @@
+body #main {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+body .page-home #panels p {
+  color: #666665;
+  line-height: 36px;
+  font-size: 18px;
+  font-weight: 300;
+}
+body .page-home #panels .intro {
+  margin-top: -50px;
+  padding: 150px 10px 350px 10px;
+  background: url(https://c2.staticflickr.com/6/5592/14466706531_9e28621643_h.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  body .page-home #panels .discgolf #thesport h3 {
+    margin-top: 0;
+  }
+}
+body .page-home #panels .players div > div {
+  padding-bottom: 50px;
+}

@@ -2,7 +2,111 @@
 @import "bootstrap/variables.less";	
 @import "bootstrap/mixins.less";	
 
-//Add custom CSS
+//Add custom CSS - http://andrewshen.net/
+
 body{
-	
+
+	#main{
+		padding-left: 0px;
+ 	 	padding-right: 0px;
+	}
+
+
+	.page-home{
+		#panels{
+
+			p{
+				color: #666665;
+				line-height: 36px;
+				font-size: 18px;
+				font-weight: 300;
+
+			}
+
+			//Individual Panels
+			&> div{
+				// padding: 50px 10px 50px 10px; 
+			}
+
+
+
+
+
+			.intro{ 
+				margin-top: -50px;
+
+				padding: 150px 10px 350px 10px; 
+				background: url(https://c2.staticflickr.com/6/5592/14466706531_9e28621643_h.jpg) no-repeat center center scroll;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+				min-height: 600px;
+				padding-left: 0px;
+  				padding-right: 0px;
+
+				text-align: center;
+				h2{
+
+
+				}
+				p{
+
+				}
+
+
+			}
+
+			.discgolf{
+
+
+				#thesport{
+					@media (min-width: @screen-sm-min) {h3{margin-top: 0;}}
+				}
+
+				#pdga{
+
+				}
+
+
+			}
+
+			.players{
+				div > div{//Player
+					
+					padding-bottom: 50px; 
+
+					p{//Bio
+
+					}
+				}
+			}
+
+			.about{
+
+			}
+
+			.join{
+
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+	footer{
+
+
+	}
 }
+
+
+//Additional CSS includes

@@ -188,7 +188,7 @@ if(!config::$render){
 	foreach(config::$global_javascript as $javascript) echo "<script src='$javascript'></script>";
 
 	//Load the rest of the javascript  
-	foreach(config::$javascript as $javascript) echo "<script src='js/$javascript.js'></script>";
+	foreach(config::$javascript as $javascript) echo "<script src='$javascript'></script>";
 	
 	?>
 	<!--LAZY SCRIPTS --> 
