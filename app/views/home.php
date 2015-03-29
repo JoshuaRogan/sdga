@@ -10,13 +10,15 @@ class player{
 
 
 	function add_player($name, $bio, $img, $stats){
-
-
 		self::$players[] = $this; 
 	}
 
+	function gen_html(){
 
-	static function gen_html(){
+	}
+
+
+	static function gen_all_html(){
 		$i = 0; 
 		foreach($players as $player){
 			
@@ -25,8 +27,7 @@ class player{
 			else $flip = false; 
 			$i++;
 
-
-
+			$player->gen_html(); 
 		}
 	}
 
@@ -47,7 +48,7 @@ class player{
 			</div>
 		</div>
 
-		<div class="row discgolf"> 
+		<div id="discgolf" class="row discgolf"> 
 			<div class="container"> 
 				<h2> What is Disc Golf? </h2>
 				
@@ -86,7 +87,7 @@ class player{
 			</div>
 		</div>
 
-		<div class="row players"> 
+		<div id="meet-the-team" class="row players"> 
 			<div class="container"> 
 				<h2> Meet the Team </h2>
 
@@ -94,16 +95,16 @@ class player{
 				<div class="row player"> <!-- MOVE TO THE FUNCTION!!!! -->  
 					<h3> Josh Rogan </h3>
 					<div class="col-md-4 center-block"> 
-						<img class="img-responsive center-block" src="https://farm6.staticflickr.com/5556/14870560596_760dcf3d01_z.jpg">
+						<img class="img-responsive center-block" src="https://c4.staticflickr.com/4/3832/14254360792_d7a1436c1a_n.jpg">
 					</div>
 					<div class="col-md-8"> 
-						<p> Tote bag scenester iPhone post-ironic, PBR banjo kitsch pickled ennui tilde. FDeep v aesthetic Intelligentsia bicycle rights. Tousled selfies Intelligentsia, butcher squid crucifix jean shorts +1 retro. Authentic hoodie semiotics, synth tousled Banksy art party whatever quinoa Pinterest put a bird on it.</p>
+						<p> Longest member of the SDGA. Currently lives in Pittsburgh, PA and plays courses such as Deer Lakes, Moraine State Park, and practices at Schenley Park. Comes from a background of ultimate and has a strong short forehand game.  </p>
 						<ul class="list-unstyled"> 
 							<li> Throws: RHBH </li>
 							<li> Current City: Pittsburgh </li>
 							<li> Distance Driver: Innova Destroyer </li>
 							<li> Putter: JK Pro Aviar </li>
-							<li> Rating: 973 </li>
+							<li> Rating: 973 </li> <!-- Turn into a function  -->
 						</ul>	
 					</div>
 				</div>
@@ -113,11 +114,11 @@ class player{
 				<div class="row player"> <!-- MOVE TO THE FUNCTION!!!! -->  
 					<h3> Jim Sagona </h3>
 					<div class="col-md-4  col-md-push-8"> 
-						<img class="img-responsive center-block" src="https://farm6.staticflickr.com/5575/14253327331_25c1b3e4c5_z.jpg">
+						<img class="img-responsive center-block" src="https://farm4.staticflickr.com/3864/14893203992_3a04af0339_b.jpg">
 					</div>
 
 					<div class="col-md-8 col-md-pull-4"> 
-						<p> Tote bag scenester iPhone post-ironic, PBR banjo kitsch pickled ennui tilde. FDeep v aesthetic Intelligentsia bicycle rights. Tousled selfies Intelligentsia, butcher squid crucifix jean shorts +1 retro. Authentic hoodie semiotics, synth tousled Banksy art party whatever quinoa Pinterest put a bird on it.</p>
+						<p> Jim currently lives in State College, PA finishing his degree in Supply Chain Management at Penn State. He also plays on the disc golf team who are recently won the PA Collegiate championships and will be heading to the NCAA Championships this spring. Only left on the team.  </p>
 						<ul class="list-unstyled"> 
 							<li> Throws: LHBH </li>
 							<li> Current City: State College </li>
@@ -129,33 +130,52 @@ class player{
 				</div>
 				<!-- PLAYER -->
 
-								<!-- PLAYER --> 
+				<!-- PLAYER --> 
 				<div class="row player"> <!-- MOVE TO THE FUNCTION!!!! -->  
-					<h3> Josh Rogan </h3>
+					<h3> Mike Aniska </h3>
 					<div class="col-md-4 center-block"> 
 						<img class="img-responsive center-block" src="https://farm4.staticflickr.com/3885/14587660128_5eb3814395_z.jpg">
 					</div>
 					<div class="col-md-8"> 
-						<p> Tote bag scenester iPhone post-ironic, PBR banjo kitsch pickled ennui tilde. FDeep v aesthetic Intelligentsia bicycle rights. Tousled selfies Intelligentsia, butcher squid crucifix jean shorts +1 retro. Authentic hoodie semiotics, synth tousled Banksy art party whatever quinoa Pinterest put a bird on it.</p>
+						<p> The overhand specialist uses his Destoryer to dominate every course he plays. Also utilizes the, difficult to learn, Aerobie Epic to gain maximum distance on open holes with his unique overhand approach.  </p>
 						<ul class="list-unstyled"> 
-							<li> Throws: RHBH </li>
-							<li> Current City: Pittsburgh </li>
+							<li> Throws: RHOH </li>
+							<li> Current City: Millersville, PA </li>
 							<li> Distance Driver: Innova Destroyer </li>
 							<li> Putter: JK Pro Aviar </li>
-							<li> Rating: 973 </li>
 						</ul>	
 					</div>
 				</div>
 				<!-- PLAYER -->
 
-								<!-- PLAYER --> 
+				<!-- PLAYER --> 
 				<div class="row player"> <!-- MOVE TO THE FUNCTION!!!! -->  
-					<h3> Jim Sagona </h3>
+					<h3> Kyle Nole </h3>
 					<div class="col-md-4  col-md-push-8"> 
-						<img class="img-responsive center-block" src="https://farm3.staticflickr.com/2926/14069879829_890e8cf3be_z.jpg">
+						<img class="img-responsive center-block" src="https://farm6.staticflickr.com/5575/14253327331_25c1b3e4c5_z.jpg">
 					</div>
 
 					<div class="col-md-8 col-md-pull-4"> 
+						<p> Kyle   </p>
+						<ul class="list-unstyled"> 
+							<li> Throws: LHBH </li>
+							<li> Current City: Dunmore, PA </li>
+							<li> Distance Driver: Innova Monarch </li>
+							<li> Putter: MVP Anode </li>
+						</ul>	
+					</div>
+				</div>
+				<!-- PLAYER -->
+
+
+				<!-- PLAYER --> 
+				<div class="row player"> <!-- MOVE TO THE FUNCTION!!!! -->  
+					<h3> Michael Zaccheo </h3>
+					<div class="col-md-4"> 
+						<img class="img-responsive center-block" src="https://farm3.staticflickr.com/2926/14069879829_890e8cf3be_z.jpg">
+					</div>
+
+					<div class="col-md-8"> 
 						<p> Tote bag scenester iPhone post-ironic, PBR banjo kitsch pickled ennui tilde. FDeep v aesthetic Intelligentsia bicycle rights. Tousled selfies Intelligentsia, butcher squid crucifix jean shorts +1 retro. Authentic hoodie semiotics, synth tousled Banksy art party whatever quinoa Pinterest put a bird on it.</p>
 						<ul class="list-unstyled"> 
 							<li> Throws: LHBH </li>
@@ -163,6 +183,26 @@ class player{
 							<li> Distance Driver: Innova Boss </li>
 							<li> Putter: MVP Anode </li>
 							<li> Rating: 950 </li>
+						</ul>	
+					</div>
+				</div>
+				<!-- PLAYER -->
+
+
+				<!-- PLAYER --> 
+				<div class="row player"> <!-- MOVE TO THE FUNCTION!!!! -->  
+					<h3> Jeremy Tokash </h3>
+					<div class="col-md-4 center-block"> 
+						<img class="img-responsive center-block" src="https://farm6.staticflickr.com/5556/14870560596_760dcf3d01_z.jpg">
+					</div>
+					<div class="col-md-8"> 
+						<p> Longest member of the SDGA. Currently lives in Pittsburgh, PA and plays courses such as Deer Lakes, Moraine State Park, and practices at Schenley Park. Comes from a background of ultimate and has a strong short forehand game.  </p>
+						<ul class="list-unstyled"> 
+							<li> Throws: RHFH </li>
+							<li> Current City: Scranton, PA </li>
+							<li> Distance Driver: Innova Destroyer </li>
+							<li> Putter: JK Pro Aviar </li>
+							<li> Rating: 973 </li> <!-- Turn into a function  -->
 						</ul>	
 					</div>
 				</div>
@@ -179,7 +219,7 @@ class player{
 			</div>
 		</div> -->
 
-		<div class="row tour"> 
+		<div id="tour" class="row tour"> 
 			<div class="container">
 				<h2> 2015 Tour</h2>
 				<p> Tournaments for the 2015 season for the SDGA.  </p>
@@ -187,14 +227,58 @@ class player{
 			</div>
 		</div>
 
-		<div class="section sponsors"> 
+		<div id="sponsors" class="section sponsors"> 
 			<div class="container">
 				<h2> Our Sponsors </h2>
 
 				<p> Section to explain why to become a sponsor listing tour events worlds (show a animated map), college champ etc. </p>
+				<p> We will be traveling all around Pennsylvania...</p>
 				<p> Custom disc, Teeshirt,  </p>
 				<p> Custom disc, Teeshirt,  </p>
 				<h3><a href="#">Become a Sponsor</a></h3> 
+
+
+				<div class="packages">
+					<div class="col-md-4">
+						<div> 
+						  	<h3> Bronze </h3>
+						  	<i class="fa fa-trophy fa-5x bronze"></i>
+						  	<p> <strong>Donations $20 - $100</strong> </p>
+						  	<p> <strong>What do you get?</strong> Small (at least 2"x2" logo) on our first apparel. Small logo on our website and social media pages.  </p>
+						  	<p> <strong>What do we get?</strong> These funds will help us sponsor appropriate apparel and fund some additional discs. </p>
+						</div>
+					</div>
+
+				  <div class="col-md-4">
+				  	<div> 
+					  	<h3> Silver </h3>
+					  	<i class="fa fa-trophy fa-5x silver"></i>
+					  	<p> <strong>Donations $100 - $250</strong> </p>
+					  	<p> <strong>What do you get?</strong> Medium (at least 4"x4" logo) on our first apparel. Medium sized logo on our website and social media pages.  </p>
+					  	<p> <strong>What do we get?</strong> These funds will help us sponsor appropriate apparel and fund some additional discs and more equipment. The funds will also be used for transportation costs to get us to more tournaments.  </p>
+				  	</div>
+				  </div>
+
+
+				  <div class="col-md-4">
+				  	<div> 
+					  	<h3> Gold </h3>
+					  	<i class="fa fa-trophy fa-5x gold"></i>
+					  	<p> <strong>Donations above $250</strong> </p>
+					  	<p> <strong>What do you get?</strong> Large logo on our first apparel. Prominently featured on the front or back of shirts. Large logo on our website and social media pages. Plus a logo on every shirt going forward.  </p>
+					  	<p> <strong>What do we get?</strong> These funds will help us sponsor appropriate apparel and fund additional discs, better equipment, and a significant portion of travel expenses. </p>
+				  	</div>
+				  </div>
+
+			 </div>
+
+
+
+
+
+
+
+
 			</div>
 		</div>
 

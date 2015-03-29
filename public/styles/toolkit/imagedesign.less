@@ -1,0 +1,12 @@
+.circular(@url, @radius, @dimension, @shadowpx) {
+	width: @dimension;
+	height: @dimension;
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	background: url(@url) no-repeat;
+
+	box-shadow: 0 0 @shadowpx rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 @shadowpx rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 @shadowpx rgba(0, 0, 0, .8);
+}

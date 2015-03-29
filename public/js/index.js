@@ -1,12 +1,9 @@
-var map; 
-var tourmarkers = [
-	new google.maps.LatLng(33.473472, -81.903576), //College Championships
-	new google.maps.LatLng(40.621239, -79.819466), //Deer Lakes WOrlds 
-	new google.maps.LatLng(41.036111, -75.683889), //Hickory Run State Park
-	new google.maps.LatLng(40.545357, -75.076721), //Tinicum Open
-	new google.maps.LatLng(39.638753, -75.756279), //Iron HIll
-	new google.maps.LatLng(40.847661,-77.877864) //State College Course
-];
+$(document).ready(function() {
+	google.maps.event.addDomListener(window, 'load', initialize);
+	
+
+});
+
 
 
 var tour = [
@@ -39,6 +36,18 @@ var tour = [
 		title: "Delaware Disc Golf Challenge",
 		desc: "Here is a short description for this tournmanet",
 		link: "http://www.pdga.com/tour/event/19605"
+	},	
+	{	
+		location: new google.maps.LatLng(40.621463, -79.814455),
+		title: "Worlds Invasion | Deer Lakes",
+		desc: "Here is a short description for this tournmanet",
+		link: "http://www.pdga.com/tour/event/19605"
+	},	
+	{	
+		location: new google.maps.LatLng(41.062697, -80.041941),
+		title: "Worlds Invasion | Slipper Rock",
+		desc: "Here is a short description for this tournmanet",
+		link: "http://www.pdga.com/tour/event/19605"
 	},
 	// {	
 	// 	location: new google.maps.LatLng(40.847661,-77.877864),
@@ -53,11 +62,6 @@ var tour = [
 
 var markers = [];
 
-$(document).ready(function() {
-
-	
-
-});
 
 
 
@@ -115,4 +119,3 @@ function addMarker(position) {
 }
 
 
-google.maps.event.addDomListener(window, 'load', initialize);

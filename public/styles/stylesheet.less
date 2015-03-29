@@ -18,7 +18,7 @@ body{
 
 			p{
 				color: #666665;
-				line-height: 36px;
+				line-height: 32px;
 				font-size: 18px;
 				font-weight: 300;
 
@@ -119,7 +119,6 @@ body{
 							padding: 0; 
 							@media (min-width: @screen-sm-min) {
 								font-size: 26px;
-
 							}
 						}
 
@@ -131,6 +130,33 @@ body{
 							padding: 0; 
 							@media (min-width: @screen-sm-min) {  font-size: 16px; line-height: 30px;}
 						}
+					}
+				}
+			}
+
+			.sponsors{
+				
+				.packages div{
+					padding: 5px;
+					margin: 0;
+				}
+
+				.packages div > div{
+					#material .cards();
+					border-radius: 1px;
+					background-color: #fff;
+					text-align: center; 
+					margin: 2px;
+					padding: 10px; 
+					min-height: 600px; 
+
+					//Icons
+					.bronze{color: #d35400}
+					.silver{color: #bdc3c7}
+					.gold{color: #f39c12}
+
+					@media (min-width: @screen-sm-min) {
+						font-size: 26px;
 					}
 				}
 			}
